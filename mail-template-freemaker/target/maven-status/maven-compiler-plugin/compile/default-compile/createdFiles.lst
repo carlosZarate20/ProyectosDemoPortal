@@ -1,0 +1,4 @@
+com\memorynotfound\mail\Mail.class
+com\memorynotfound\mail\EmailService.class
+com\memorynotfound\mail\Application.class
+com\memorynotfound\mail\FreemarkerConfig.class

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: Spring LDAP - simple-mail
+Implementation-Version: 1.0.0-SNAPSHOT
+Built-By: carlos.zarate
+Implementation-Vendor-Id: com.memorynotfound.mail
+Build-Jdk: 1.8.0_171
+Implementation-URL: http://memorynotfound.com
+Created-By: Maven Integration for Eclipse
+

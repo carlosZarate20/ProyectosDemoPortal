@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>Enable Disable Submit Button with jQuery</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.1/themes/smoothness/jquery-ui.css"/>
+<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+<script src="https://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1>Enable Disable Submit Button with jQuery</h1>
+ 
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">Enable Disable Submit Button with jQuery</div>
+    <div class="panel-body">
+        <form id="frm" method="post">
+ 
+        <div class="form-group">Name <span class="name-validation validation-error"></span>
+ 
+        </div>
+ 
+        <div>
+             <input type="text" name="name" id="name" class="form-control" onblur="validation()" />
+        </div>
+ 
+        <div class="form-group">Email <span class="email-validation validation-error"></span></div>
+ 
+        <div>
+     		<input type="text" name="email" id="email" class="form-control" onblur="validation()" />
+        </div>
+        </br>
+         <div>
+             <button type="submit" name="btn-submit" id="btn-submit" disabled="disabled" class="btn btn-success">Submit</button>
+         </div>
+ 
+        </form>
+	</div>
+  </div>
+</div>
+
+<input type="text" id="datepicker" placeholder="DD/MM/YYYY"/>
+ 
+ 
+<script type="text/JavaScript">
+ 
+function validation()
+{
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+ 
+ 
+  var email_regex_format = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,3})+$/;
+	var result = email_regex_format.test(email);
+ 
+	if(name==""){
+      $("#name").css("border","#FF0000 2px solid");
+      $(".name-validation").html("Required");
+  }
+  else{
+    $("#name").css("border","#008000 2px solid");
+      $(".name-validation").html("");
+  }
+  if(!result){
+      $("#email").css("border","#FF0000 2px solid");
+        $(".email-validation").html("Invalid Email");
+  }
+  else {
+    $("#email").css("border","#008000 2px solid");
+    $(".email-validation").html("");
+  }
+ 
+ 
+  $("#btn-submit").attr("disabled",true);
+	if(!name==""&&result)
+  {
+		$("#btn-submit").attr("disabled",false);
+	}
+}
+$(function () {
+   $('#datepicker').datepicker({
+       inline: true,
+       //nextText: '→',
+       //prevText: '←',
+       showOtherMonths: true,
+       //dateFormat: 'dd MM yy',
+       dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+       //showOn: "button",
+       //buttonImage: "img/calendar-blue.png",
+       //buttonImageOnly: true,
+   });
+});
+ 
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
