@@ -1,0 +1,52 @@
+{
+    "HomeLink": "Inicio",
+    "AboutLink": "Sobre",
+    "ContactLink": "Contato",
+    "Sel_lang": "Escolha o seu idioma",
+    "Languages":{
+        "Spanish":"Espanhol",
+        "English":"Inglês",
+        "French":"francês",
+        "Chinese":"chinês",
+        "Hindi":"Português"
+    },
+    "Title": "Traduzir App",
+    "MainTxt": "Bem vinda",
+    "LeadTxt": "Esta é uma aplicação de demonstração de tradução angular. O usuário pode ver o idioma padrão com base na localidade ou o usuário pode escolher o idioma de sua escolha a partir do acima.",
+    "MainBnt": "Vamos começar",
+    "Head1": "Começando",
+    "Text1": "Documentação detalhada e guia do desenvolvedor podem ser encontrados aqui.",
+    "Head2": "Referência da API",
+    "Text2": "A referência detalhada da API de conversão angular pode ser encontrada aqui.",
+    "Head3": "Github",
+    "Text3": "View angular-translate on github here.",
+    "About": {
+        "PgTitle":"About",
+        "PgText":"This web application demonstrates the use of angular tranlate and its features. Angular translate is very simple to use and can be easily integrated with any angular app. It is loaded with tons of features and options which makes our life easy."
+    },
+    "Contact":{
+        "PgTitle":"Contate-Nos",
+        "fname": "Primeiro nome",
+        "fname-placeholder":"Introduza o primeiro nome",
+        "lname":"Último nome",
+        "lname-placeholder":"Insira o último nome",
+        "email":"O email",
+        "email-placeholder":"Digite o e-mail",
+        "phone":"Telefone #",
+        "phone-placeholder":"(555)555-1212",
+        "add":"Endereço",
+        "add-placeholder":"Insira o endereço",
+        "hobby":"Hobbies",
+        "hobbies":{
+            "Movies": "Filmes",
+            "Walking":"Andando",
+            "Swimming":"Natação",
+            "Running":"Corrida"
+        },
+        "web":"Site",
+        "web-placeholder":"Entre no site",
+        "comment":"Comentários",
+        "comment-placeholder":"Digite seus comentários",
+        "btn":"Enviar"
+    }
+  }

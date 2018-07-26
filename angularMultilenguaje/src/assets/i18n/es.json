@@ -1,0 +1,52 @@
+{
+    "HomeLink": "Inicio",
+    "AboutLink": "Sobre",
+    "ContactLink": "Contacto",
+    "Sel_lang": "Escoger Idioma",
+    "Languages":{
+        "Spanish":"Español",
+        "English":"Ingles",
+        "French":"Frances",
+        "Chinese":"Chino",
+        "Portuguese":"Portugues"
+    },
+    "Title": "Traducir App",
+    "MainTxt": "Bienvenido",
+    "LeadTxt": "This is an angular translate demo application. User can see the default language based upon the locale or user can choose the language of his choice from the above.",
+    "MainBnt": "Vamos a empezar",
+    "Head1": "Getting Started",
+    "Text1": "Detailed documentation and developer guide can be found here.",
+    "Head2": "API Reference",
+    "Text2": "Detailed angular-translate API reference can be found here.",
+    "Head3": "Github",
+    "Text3": "View angular-translate on github here.",
+    "About": {
+        "PgTitle":"Sobre",
+        "PgText":"This web application demonstrates the use of angular tranlate and its features. Angular translate is very simple to use and can be easily integrated with any angular app. It is loaded with tons of features and options which makes our life easy."
+    },
+    "Contact":{
+        "PgTitle":"Contact Us",
+        "fname": "Nombre",
+        "fname-placeholder":"Ingresa tu Nombre",
+        "lname":"Apellido",
+        "lname-placeholder":"Ingresa tu Apellido",
+        "email":"Correo",
+        "email-placeholder":"Ingresa tu Correo",
+        "phone":"Telefono #",
+        "phone-placeholder":"(555)555-1212",
+        "add":"Direccion",
+        "add-placeholder":"Ingresa tu Direccion",
+        "hobby":"Hobbies",
+        "hobbies":{
+            "Movies": "Peliculas",
+            "Walking":"Caminar",
+            "Swimming":"Nadar",
+            "Running":"Correr"
+        },
+        "web":"Sitio Web",
+        "web-placeholder":"Entra al Sitio Web",
+        "comment":"Comentarios",
+        "comment-placeholder":"Ingresa tu comentario",
+        "btn":"Enviar"
+    }
+  }
