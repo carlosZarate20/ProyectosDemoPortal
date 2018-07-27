@@ -10,7 +10,7 @@
         "Chinese":"Chino",
         "Portuguese":"Portugues"
     },
-    "Title": "Traducir App",
+    "Title": "Traductor App",
     "MainTxt": "Bienvenido",
     "LeadTxt": "This is an angular translate demo application. User can see the default language based upon the locale or user can choose the language of his choice from the above.",
     "MainBnt": "Vamos a empezar",
