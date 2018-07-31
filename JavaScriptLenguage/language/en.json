@@ -1,0 +1,23 @@
+{
+    "en": {
+        "idioma": "Chose language",
+        "lan-en": "English",
+        "lan-es": "Spanish",
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact",
+        "nombre": "First Name",
+        "apellido": "Last Name",
+        "telefono": "Phone",
+        "email": "E-mail",
+        "direccion": "Address",
+        "ciudad": "City",
+        "estado": "State",
+        "codigoZip": "Zip code",
+        "website": "Website or domain name",
+        "proyecto": "Project Description",
+        "enviar": "Send",
+        "yes": "Yes",
+        "no": "No"
+      }
+}

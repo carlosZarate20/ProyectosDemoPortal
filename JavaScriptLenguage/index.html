@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Multilenguaje</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="app/index.js"></script>
+    <script type="text/javascript" src="app/controller.js"></script>
+    <!--<script type="text/javascript" src="jquery.min.js"></script>-->
+    <!--<script type="text/javascript" src="app/texto.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <!--<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.1/themes/smoothness/jquery-ui.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="all"/>-->
+    <!--<script type="text/javascript" src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+    <script type='text/javascript' src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script type="text/javascript" src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Multilenguaje</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#" data-id="home" class="intfrase" key="home">Home</a></li>
+                <li><a href="#" data-id="about" class="intfrase" key="about">About</a></li>
+                <li><a href="#" data-id="contact" class="intfrase" key="contact">Contact</a></li>
+            <li class="dropdown"><a  href="javascript:void(0)" class="dropdown-toggle intfrase" data-toggle="dropdown" data-id="idioma" role="button">Chose Language <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a onclick="cambiarIdioma('es')" data-id="lan-es" class="intfrase">Español</a></li>
+                    <li><a onclick="cambiarIdioma('en')" data-id="lan-en" class="intfrase">Ingles</a></li>
+                </ul>
+            </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--<div>
+            <span data-id="idioma" class="intfrase"></span>
+            <button onclick="cambiarIdioma('es')" data-id="lan-es" class="intfrase">Español</button>
+            <button onclick="cambiarIdioma('en')" data-id="lan-en" class="intfrase">Ingles</button>
+        </div>-->
+
+
+
+        <!--<div>
+            <span data-tr="Cambiar idioma:"></span>
+            <button data-tr="Español" id="btn-es"></button>
+            <button data-tr="Inglés" id="btn-en"></button>
+            <button data-tr="Portugués" id="btn-pt"></button>
+        </div>-->
+
+    <!--<form>
+        <div class="form-group">
+            <label data-id="nombre" class="col-md-4 control-label intfrase" key="nombre">Nombres:</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label data-id="apellido" class="col-md-4 control-label intfrase"  key="apellido">Apellidos:</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label data-id="telefono" class="col-md-4 control-label intfrase"  key="telefono">Telefono:</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+    </form>-->
+
+    <div class="container">
+
+        <form class="well form-horizontal" action="" method="post"  id="contact_form">
+        <fieldset>
+
+        <div class="form-group">
+            <label data-id="nombre" class="col-md-4 control-label intfrase" key="nombre">First Name</label>  
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label data-id="apellido" class="col-md-4 control-label intfrase"  key="apellido" >Last Name</label> 
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label data-id="email" class="col-md-4 control-label intfrase" key="email">E-mail</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                    <input name="email" placeholder="E-mail" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label data-id="telefono" class="col-md-4 control-label intfrase"  key="telefono">Phone</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                    <input name="phone" placeholder="Phone" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label data-id="direccion" class="col-md-4 control-label intfrase"  key="direccion">Address</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                    <input name="address" placeholder="Address" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label data-id="ciudad" class="col-md-4 control-label intfrase" key="ciudad">City</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                    <input name="city" placeholder="City" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group"> 
+        <label data-id="estado" class="col-md-4 control-label intfrase" key="estado">State</label>
+            <div class="col-md-4 selectContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                <select name="state" class="form-control selectpicker" >
+                <option value=" " >Please select your state</option>
+                <option>Alabama</option>
+                <option>Alaska</option>
+                <option>Arizona</option>
+                <option>Arkansas</option>
+                <option>California</option>
+                <option>Colorado</option>
+                <option>Connecticut</option>
+                <option>Delaware</option>
+                <option>District of Columbia</option>
+                <option> Florida</option>
+                <option>Georgia</option>
+                <option>Hawaii</option>
+                <option>daho</option>
+                <option>Illinois</option>
+                <option>Indiana</option>
+                <option>Iowa</option>
+                <option> Kansas</option>
+                <option>Kentucky</option>
+                <option>Louisiana</option>
+                <option>Maine</option>
+                <option>Maryland</option>
+                <option> Mass</option>
+                <option>Michigan</option>
+                <option>Minnesota</option>
+                <option>Mississippi</option>
+                <option>Missouri</option>
+                <option>Montana</option>
+                <option>Nebraska</option>
+                <option>Nevada</option>
+                <option>New Hampshire</option>
+                <option>New Jersey</option>
+                <option>New Mexico</option>
+                <option>New York</option>
+                <option>North Carolina</option>
+                <option>North Dakota</option>
+                <option>Ohio</option>
+                <option>Oklahoma</option>
+                <option>Oregon</option>
+                <option>Pennsylvania</option>
+                <option>Rhode Island</option>
+                <option>South Carolina</option>
+                <option>South Dakota</option>
+                <option>Tennessee</option>
+                <option>Texas</option>
+                <option>Uttah</option>
+                <option>Vermont</option>
+                <option>Virginia</option>
+                <option>Washington</option>
+                <option>West Virginia</option>
+                <option>Wisconsin</option>
+                <option>Wyoming</option>
+                </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label data-id="codigoZip" class="col-md-4 control-label intfrase" key="codigoZip">Zip Code</label>  
+                <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                    <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label data-id="website" class="col-md-4 control-label intfrase" key="website">Website or domain name</label>  
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                    <input name="website" placeholder="Website or domain name" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label">Do you have hosting?</label>
+            <div class="col-md-4">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="hosting" value="yes" /> Yes
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="hosting" value="no" /> No
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label data-id="proyecto" class="col-md-4 control-label intfrase" key="proyecto">Project Description</label>
+                <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                        <textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-success" role="alert" id="success_message">Success 
+            <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label"></label>
+            <div class="col-md-4">
+                <button type="submit" class="btn btn-warning intfrase" data-id="enviar">Send <span class="glyphicon glyphicon-send"></span></button>
+            </div>
+        </div>
+
+    </fieldset>
+    </form>
+    </div>
+</body>
+</html>
